@@ -13,11 +13,16 @@ app.get('/' , (req, res) => {
     })
 });
 
+app.post('/submit' , (req, res) => {
+    console.log(req.body)
+// TODO: handle data
+    res.sendStatus(200)
+})
+
 
 app.listen(port, ()=>{
     console.log(`app running o port: ${port}`)
     
 });
 
-// TODO: fix left font-size
-// find a way to preserve the selected option
+// TODO: find a way to preserve the selected option
