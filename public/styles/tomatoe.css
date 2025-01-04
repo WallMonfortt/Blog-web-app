@@ -102,8 +102,6 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit;
-    font-size: 100%;
     vertical-align: baseline
 }
 
@@ -113,23 +111,20 @@ body {
 }
 
 .kolor-tla {
-    background-color: #504a4b;
+    background-color: #000000;
     -webkit-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out
 }
 
 .pozycja {
-    grid-area: 2 / 2 / 3/ 3;
     display: flex;
-    align-items: center;
-    justify-content:  center;
-    background-color: #504a4b;
+    background-color: #000000;
 }
 
 .srodek {
     display: table-cell;
     vertical-align: middle;
-    padding: 20px 0px
+    /* padding: 20px 0px */
 }
 
 span {
@@ -597,7 +592,7 @@ span {
     display: block;
     width: 20px;
     height: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-top: none;
     border-left: none;
     position: absolute;

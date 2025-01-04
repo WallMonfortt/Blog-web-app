@@ -1,5 +1,6 @@
 @import url('left-bar.css');
 @import url('tomatoe.css');
+@import url('home.css');
 
 
 *{
@@ -23,8 +24,12 @@ body {
     grid-area: 1 / 2 / 2 / 3 ;
     color: #ffffff;
     justify-self: center;
-    align-self: center;
-    font-size: xx-large;
+    align-content: center;
+    padding-top: 10px;
+}
+
+.content-container{
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 
