@@ -1,0 +1,11 @@
+
+<% if (locals.essays) { %>
+   <% locals.essays.reverse().map((e) => { %>
+      <h3 class="title-essay"><%= e.title %></h3>
+      <span class="author-essay"><%= e.author %></span>
+      <p class="p-essay"><%= e.content %></p>
+   <% }) %>
+   
+ <% } else { %>
+  <h1>No current data on essays</h1>
+   <% } %>
