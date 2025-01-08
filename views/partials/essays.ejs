@@ -3,7 +3,12 @@
    <% locals.essays.reverse().map((e) => { %>
       <h3 class="title-essay"><%= e.title %></h3>
       <span class="author-essay"><%= e.author %></span>
+      <span class="author-essay"><%= e.date %></span>
       <p class="p-essay"><%= e.content %></p>
+      <div class="actions">
+         <button style="background-color: orange;">Update</button>
+         <button style="background-color: red;">Delete</button>
+      </div>
    <% }) %>
    
  <% } else { %>
