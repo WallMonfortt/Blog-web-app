@@ -1,13 +1,13 @@
 
 <% if (locals.essays) { %>
-   <% locals.essays.reverse().map((e) => { %>
+   <% locals.essays.sort((a,b) => a.id - b.id).reverse().map((e) => { %>
       <h3 class="title-essay"><%= e.title %></h3>
       <span class="author-essay"><%= e.author %></span>
       <span class="author-essay"><%= e.date %></span>
       <p class="p-essay"><%= e.content %></p>
       <div class="actions">
          <button style="background-color: orange;">Update</button>
-         <button style="background-color: red;">Delete</button>
+         <button onclick="deletePost('<%= e.id %>')" style="background-color: red;">Delete</button>
       </div>
    <% }) %>
    

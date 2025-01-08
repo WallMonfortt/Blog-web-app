@@ -14,4 +14,9 @@ $(document).ready(function() {
       $(this).css('--menu-link-active-color', colorValue);
     });
   });
+
+  function deletePost(id) {
+    console.log(`working ${id}`)
+    // TODO: implement delete feature
+  }
   
